@@ -1,0 +1,21 @@
+[project]
+name = "raspagem-de-dados-noticias"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Wellyson Balbino",email = "wellysonjose115@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit (>=1.53.1,<2.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "beautifulsoup4 (>=4.14.3,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "raspagem_de_dados_noticias", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
